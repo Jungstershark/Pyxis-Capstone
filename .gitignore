@@ -1,1 +1,6 @@
 venv
+*pt
+*jpg
+*png
+*jpeg
+__pycache__/
