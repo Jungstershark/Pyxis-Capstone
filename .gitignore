@@ -1,6 +1,10 @@
 venv
-*pt
-*jpg
-*png
-*jpeg
+*.pt
+*.jpg
+*.png
+*.jpeg
+*.mp4
+*.xml
+*.yaml
+*.txt
 __pycache__/
