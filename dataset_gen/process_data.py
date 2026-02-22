@@ -3,7 +3,7 @@ import os
 import shutil
 
 
-def video_to_frames(video_path, output_dir, start_count=0, frames_per_second=10):
+def video_to_frames(video_path, output_dir, start_count=0, frames_per_second=10, return_counter=False):
     """
     Extract frames from a video file and save them as sequentially numbered images.
 
@@ -71,10 +71,11 @@ def video_to_frames(video_path, output_dir, start_count=0, frames_per_second=10)
         frame_count += 1
     
     cap.release()
-    return counter
+    if return_counter:
+        return counter
 
 
-def process_dataset(input_folder, output_folder, frames_per_second=10):
+def process_dataset(input_folder, output_folder, start_count=0, frames_per_second=10, return_counter=False):
     """
     Process a dataset of videos and images by extracting frames from videos and
     copying images into a single output directory using a unified naming scheme.
@@ -119,7 +120,7 @@ def process_dataset(input_folder, output_folder, frames_per_second=10):
 
     image_exts = {".jpg", ".jpeg", ".png"}
 
-    global_counter = 0
+    global_counter = start_count
     video_frames_saved = 0
     images_saved = 0
 
@@ -135,7 +136,8 @@ def process_dataset(input_folder, output_folder, frames_per_second=10):
                     file_path,
                     output_folder,
                     start_count=global_counter,
-                    frames_per_second=frames_per_second
+                    frames_per_second=frames_per_second,
+                    return_counter=True
                 )
                 video_frames_saved += (new_counter - global_counter)
                 global_counter = new_counter
@@ -154,6 +156,7 @@ def process_dataset(input_folder, output_folder, frames_per_second=10):
     total = video_frames_saved + images_saved
     print(f"\n[DONE] All content saved to: {output_folder}")
     print(f"Video Frames: {video_frames_saved} | Images: {images_saved} | Total: {total}")
+    return global_counter
 
 
 def delete_files_by_extension(dir_path, ext):
