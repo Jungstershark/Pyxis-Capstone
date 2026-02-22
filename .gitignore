@@ -9,4 +9,5 @@ venv310
 *.yaml
 *.txt
 *.pth
+*.ts
 __pycache__/
