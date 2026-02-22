@@ -1,4 +1,5 @@
 venv
+venv310
 *.pt
 *.jpg
 *.png
@@ -7,4 +8,5 @@ venv
 *.xml
 *.yaml
 *.txt
+*.pth
 __pycache__/
