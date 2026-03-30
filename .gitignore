@@ -1,13 +1,63 @@
-venv
-venv310
-*.pt
-*.jpg
-*.png
-*.jpeg
-*.mp4
-*.xml
-*.yaml
-*.txt
-*.pth
-*.ts
+# Python
 __pycache__/
+*.pyc
+venv/
+venv310/
+.env
+
+# Model weights
+*.pt
+*.pth
+*.onnx
+*.whl
+*.ts
+
+# Images and videos (too large for git)
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.webp
+*.mp4
+*.avi
+*.mov
+
+# XML annotations (legacy format)
+*.xml
+
+# Legacy folder
+legacy/
+
+# Training runs (large, reproducible)
+**/5_runs/**/
+!**/5_runs/README.md
+
+# Augmented datasets (reproducible from gold)
+**/4_augmented/**/
+!**/4_augmented/README.md
+
+# Extracted frames (reproducible from raw) — ignore contents, keep README
+**/1_frames_*/**
+!**/1_frames_*/README.md
+
+# Weights folders
+**/5_weights/**/
+!**/5_weights/README.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ---- EXCEPTIONS: things we DO want tracked ----
+
+# Gold labels (irreplaceable human-corrected work)
+!**/gold/**/*.txt
+
+# classes.txt
+!**/classes.txt
+
+# Result CSVs (at dataset root level only)
+!datasets/**/*.csv
+
+# Notes
+!**/notes.md

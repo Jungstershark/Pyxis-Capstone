@@ -1,0 +1,24 @@
+Tier 0
+  train_images: 1353
+  empty_labels: 13
+  ladder_boxes: 1163
+  person_boxes: 2609
+  ladder_ratio_vs_t0: 1.0
+  person_ratio_vs_t0: 1.0
+
+Tier 1
+  train_images: 1353
+  empty_labels: 13
+  ladder_boxes: 1163
+  person_boxes: 2609
+  ladder_ratio_vs_t0: 1.0
+  person_ratio_vs_t0: 1.0
+
+Tier 2
+  train_images: 1353
+  empty_labels: 14
+  ladder_boxes: 1162
+  person_boxes: 2600
+  ladder_ratio_vs_t0: 0.9991
+  person_ratio_vs_t0: 0.9966
+

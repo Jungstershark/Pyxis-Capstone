@@ -1,0 +1,4 @@
+tier,train_images,empty_labels,ladder_boxes,person_boxes,ladder_ratio_vs_t0,person_ratio_vs_t0
+0,1353,13,1163,2609,1.0,1.0
+1,1353,13,1163,2609,1.0,1.0
+2,1353,14,1162,2600,0.9991,0.9966

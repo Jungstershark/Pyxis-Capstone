@@ -1,0 +1,17 @@
+dataset,split,images,labels,images_missing_label,labels_missing_image,empty_label_files,total_boxes,boxes_pilot_ladder,boxes_pilot_or_crew,boxes_class_0,boxes_class_1
+C:\Users\Jungstershark\Documents\Projects\Capstone\Pyxis-Capstone\model_finetuning\dataset_split_v2_gpu_corrected,train,1353,1353,0,0,13,3772,1163,2609,,
+C:\Users\Jungstershark\Documents\Projects\Capstone\Pyxis-Capstone\model_finetuning\dataset_split_v2_gpu_corrected,val,386,386,0,0,9,1146,371,775,,
+C:\Users\Jungstershark\Documents\Projects\Capstone\Pyxis-Capstone\model_finetuning\dataset_split_v2_gpu_corrected,test,195,195,0,0,3,596,189,407,,
+C:\Users\Jungstershark\Documents\Projects\Capstone\Pyxis-Capstone\model_finetuning\dataset_split_v2_gpu_corrected,TOTAL,1934,1934,,,,5514,1723,3791,,
+C:\Users\Jungstershark\Documents\Projects\Capstone\Pyxis-Capstone\model_finetuning\dataset_split_v2_gpu_corrected_t0,train,1353,1353,0,0,13,3772,,,1163,2609
+C:\Users\Jungstershark\Documents\Projects\Capstone\Pyxis-Capstone\model_finetuning\dataset_split_v2_gpu_corrected_t0,val,386,386,0,0,9,1146,,,371,775
+C:\Users\Jungstershark\Documents\Projects\Capstone\Pyxis-Capstone\model_finetuning\dataset_split_v2_gpu_corrected_t0,test,195,195,0,0,3,596,,,189,407
+C:\Users\Jungstershark\Documents\Projects\Capstone\Pyxis-Capstone\model_finetuning\dataset_split_v2_gpu_corrected_t0,TOTAL,1934,1934,,,,5514,,,1723,3791
+C:\Users\Jungstershark\Documents\Projects\Capstone\Pyxis-Capstone\model_finetuning\dataset_split_v2_gpu_corrected_t1,train,1353,1353,0,0,13,3772,,,1163,2609
+C:\Users\Jungstershark\Documents\Projects\Capstone\Pyxis-Capstone\model_finetuning\dataset_split_v2_gpu_corrected_t1,val,386,386,0,0,9,1146,,,371,775
+C:\Users\Jungstershark\Documents\Projects\Capstone\Pyxis-Capstone\model_finetuning\dataset_split_v2_gpu_corrected_t1,test,195,195,0,0,3,596,,,189,407
+C:\Users\Jungstershark\Documents\Projects\Capstone\Pyxis-Capstone\model_finetuning\dataset_split_v2_gpu_corrected_t1,TOTAL,1934,1934,,,,5514,,,1723,3791
+C:\Users\Jungstershark\Documents\Projects\Capstone\Pyxis-Capstone\model_finetuning\dataset_split_v2_gpu_corrected_t2,train,1353,1353,0,0,14,3762,,,1162,2600
+C:\Users\Jungstershark\Documents\Projects\Capstone\Pyxis-Capstone\model_finetuning\dataset_split_v2_gpu_corrected_t2,val,386,386,0,0,9,1146,,,371,775
+C:\Users\Jungstershark\Documents\Projects\Capstone\Pyxis-Capstone\model_finetuning\dataset_split_v2_gpu_corrected_t2,test,195,195,0,0,3,596,,,189,407
+C:\Users\Jungstershark\Documents\Projects\Capstone\Pyxis-Capstone\model_finetuning\dataset_split_v2_gpu_corrected_t2,TOTAL,1934,1934,,,,5504,,,1722,3782

@@ -1,0 +1,213 @@
+[
+  {
+    "dataset_path": "C:\\Users\\Jungstershark\\Documents\\Projects\\Capstone\\Pyxis-Capstone\\model_finetuning\\dataset_split_v2_gpu_corrected",
+    "classes": [
+      "pilot_ladder",
+      "pilot_or_crew"
+    ],
+    "split_stats": {
+      "train": {
+        "split": "train",
+        "images": 1353,
+        "labels": 1353,
+        "images_missing_label": 0,
+        "labels_missing_image": 0,
+        "empty_label_files": 13,
+        "total_boxes": 3772,
+        "boxes_per_class": {
+          "pilot_ladder": 1163,
+          "pilot_or_crew": 2609
+        }
+      },
+      "val": {
+        "split": "val",
+        "images": 386,
+        "labels": 386,
+        "images_missing_label": 0,
+        "labels_missing_image": 0,
+        "empty_label_files": 9,
+        "total_boxes": 1146,
+        "boxes_per_class": {
+          "pilot_ladder": 371,
+          "pilot_or_crew": 775
+        }
+      },
+      "test": {
+        "split": "test",
+        "images": 195,
+        "labels": 195,
+        "images_missing_label": 0,
+        "labels_missing_image": 0,
+        "empty_label_files": 3,
+        "total_boxes": 596,
+        "boxes_per_class": {
+          "pilot_ladder": 189,
+          "pilot_or_crew": 407
+        }
+      }
+    },
+    "total_images": 1934,
+    "total_labels": 1934,
+    "total_boxes": 5514,
+    "boxes_per_class_total": {
+      "pilot_ladder": 1723,
+      "pilot_or_crew": 3791
+    }
+  },
+  {
+    "dataset_path": "C:\\Users\\Jungstershark\\Documents\\Projects\\Capstone\\Pyxis-Capstone\\model_finetuning\\dataset_split_v2_gpu_corrected_t0",
+    "classes": [],
+    "split_stats": {
+      "train": {
+        "split": "train",
+        "images": 1353,
+        "labels": 1353,
+        "images_missing_label": 0,
+        "labels_missing_image": 0,
+        "empty_label_files": 13,
+        "total_boxes": 3772,
+        "boxes_per_class": {
+          "class_0": 1163,
+          "class_1": 2609
+        }
+      },
+      "val": {
+        "split": "val",
+        "images": 386,
+        "labels": 386,
+        "images_missing_label": 0,
+        "labels_missing_image": 0,
+        "empty_label_files": 9,
+        "total_boxes": 1146,
+        "boxes_per_class": {
+          "class_0": 371,
+          "class_1": 775
+        }
+      },
+      "test": {
+        "split": "test",
+        "images": 195,
+        "labels": 195,
+        "images_missing_label": 0,
+        "labels_missing_image": 0,
+        "empty_label_files": 3,
+        "total_boxes": 596,
+        "boxes_per_class": {
+          "class_0": 189,
+          "class_1": 407
+        }
+      }
+    },
+    "total_images": 1934,
+    "total_labels": 1934,
+    "total_boxes": 5514,
+    "boxes_per_class_total": {
+      "class_0": 1723,
+      "class_1": 3791
+    }
+  },
+  {
+    "dataset_path": "C:\\Users\\Jungstershark\\Documents\\Projects\\Capstone\\Pyxis-Capstone\\model_finetuning\\dataset_split_v2_gpu_corrected_t1",
+    "classes": [],
+    "split_stats": {
+      "train": {
+        "split": "train",
+        "images": 1353,
+        "labels": 1353,
+        "images_missing_label": 0,
+        "labels_missing_image": 0,
+        "empty_label_files": 13,
+        "total_boxes": 3772,
+        "boxes_per_class": {
+          "class_0": 1163,
+          "class_1": 2609
+        }
+      },
+      "val": {
+        "split": "val",
+        "images": 386,
+        "labels": 386,
+        "images_missing_label": 0,
+        "labels_missing_image": 0,
+        "empty_label_files": 9,
+        "total_boxes": 1146,
+        "boxes_per_class": {
+          "class_0": 371,
+          "class_1": 775
+        }
+      },
+      "test": {
+        "split": "test",
+        "images": 195,
+        "labels": 195,
+        "images_missing_label": 0,
+        "labels_missing_image": 0,
+        "empty_label_files": 3,
+        "total_boxes": 596,
+        "boxes_per_class": {
+          "class_0": 189,
+          "class_1": 407
+        }
+      }
+    },
+    "total_images": 1934,
+    "total_labels": 1934,
+    "total_boxes": 5514,
+    "boxes_per_class_total": {
+      "class_0": 1723,
+      "class_1": 3791
+    }
+  },
+  {
+    "dataset_path": "C:\\Users\\Jungstershark\\Documents\\Projects\\Capstone\\Pyxis-Capstone\\model_finetuning\\dataset_split_v2_gpu_corrected_t2",
+    "classes": [],
+    "split_stats": {
+      "train": {
+        "split": "train",
+        "images": 1353,
+        "labels": 1353,
+        "images_missing_label": 0,
+        "labels_missing_image": 0,
+        "empty_label_files": 14,
+        "total_boxes": 3762,
+        "boxes_per_class": {
+          "class_0": 1162,
+          "class_1": 2600
+        }
+      },
+      "val": {
+        "split": "val",
+        "images": 386,
+        "labels": 386,
+        "images_missing_label": 0,
+        "labels_missing_image": 0,
+        "empty_label_files": 9,
+        "total_boxes": 1146,
+        "boxes_per_class": {
+          "class_0": 371,
+          "class_1": 775
+        }
+      },
+      "test": {
+        "split": "test",
+        "images": 195,
+        "labels": 195,
+        "images_missing_label": 0,
+        "labels_missing_image": 0,
+        "empty_label_files": 3,
+        "total_boxes": 596,
+        "boxes_per_class": {
+          "class_0": 189,
+          "class_1": 407
+        }
+      }
+    },
+    "total_images": 1934,
+    "total_labels": 1934,
+    "total_boxes": 5504,
+    "boxes_per_class_total": {
+      "class_0": 1722,
+      "class_1": 3782
+    }
+  }
+]
