@@ -24,11 +24,11 @@ GOLD_DATASET = SCRIPT_DIR / "gold"
 WEIGHTS_DIR = SCRIPT_DIR / "5_weights"
 OUT_CSV = SCRIPT_DIR / "6_test_benchmark.csv"
 
-# Add your trained models here after step 5
+# All Phase 1 runs
 RUNS = [
-    # ("sg_y11n_t0_960", "5_weights/sg_y11n_t0_960/best.pt", 960),
-    # ("sg_y11s_t0_960", "5_weights/sg_y11s_t0_960/best.pt", 960),
-    # ("sg_y11m_t0_960", "5_weights/sg_y11m_t0_960/best.pt", 960),
+    ("sg_y11s_t0_960",  "5_weights/sg_y11s_t0_960/best.pt",  960),
+    ("sg_y11m_t0_960",  "5_weights/sg_y11m_t0_960/best.pt",  960),
+    ("sg_y11s_t0_1280", "5_weights/sg_y11s_t0_1280/best.pt", 1280),
 ]
 
 FIELDS = [

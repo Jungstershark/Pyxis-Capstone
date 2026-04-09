@@ -1,5 +1,9 @@
 # Gold Dataset (Human-Corrected)
 
-Awaiting manual label correction from auto-labeled output.
+Manually corrected labels after GroundingDINO+SAM auto-labeling.
 
-Labels (.txt) will be tracked in git once corrected. Images are not tracked.
+- Train: 270 images
+- Val: 77 images (gold standard)
+- Test: 39 images (gold standard, held out for final reporting)
+
+Labels (.txt) are tracked in git. Images are not (too large).

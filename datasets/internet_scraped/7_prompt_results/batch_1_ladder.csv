@@ -1,0 +1,16 @@
+rank,prompt,recall,precision,f1,tp,fp,fn,time_sec
+1,pilot ladder. rope ladder.,0.6496,0.7026,0.6751,241,102,130,54.2
+2,boarding ladder.,0.6173,0.6856,0.6496,229,105,142,48.9
+3,pilot ladder.,0.655,0.6412,0.648,243,136,128,51.7
+4,rope ladder.,0.6415,0.633,0.6372,238,138,133,51.3
+5,maritime pilot ladder.,0.6199,0.5793,0.599,230,167,141,48.3
+6,hanging rope ladder.,0.5687,0.6317,0.5986,211,123,160,50.0
+7,jacob's ladder.,0.5741,0.6246,0.5983,213,128,158,48.7
+8,wooden step rope ladder.,0.5633,0.6314,0.5954,209,122,162,48.1
+9,ladder.,0.4447,0.8291,0.5789,165,34,206,48.6
+10,ship ladder.,0.6146,0.517,0.5616,228,213,143,50.1
+11,maritime boarding ladder with rope sides.,0.4555,0.6787,0.5452,169,80,202,51.0
+12,rope ladder with wooden steps.,0.4582,0.6615,0.5414,170,87,201,50.1
+13,vertical rope ladder attached to vessel.,0.4474,0.4267,0.4368,166,223,205,51.3
+14,pilot ladder hanging from ship hull.,0.469,0.3816,0.4208,174,282,197,50.2
+15,pilot boarding ladder on ship.,0.4151,0.2184,0.2862,154,551,217,48.7

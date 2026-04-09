@@ -1,0 +1,701 @@
+{
+  "threshold_sweep": {
+    "SG -> SG test": [
+      {
+        "ladder_recall": 0.9744,
+        "ladder_precision": 0.9048,
+        "ladder_f1": 0.9383,
+        "person_recall": 0.88,
+        "person_precision": 0.7586,
+        "person_f1": 0.8148,
+        "n_images": 39,
+        "conf": 0.1
+      },
+      {
+        "ladder_recall": 0.9744,
+        "ladder_precision": 1.0,
+        "ladder_f1": 0.987,
+        "person_recall": 0.88,
+        "person_precision": 0.8462,
+        "person_f1": 0.8627,
+        "n_images": 39,
+        "conf": 0.15
+      },
+      {
+        "ladder_recall": 0.9487,
+        "ladder_precision": 1.0,
+        "ladder_f1": 0.9737,
+        "person_recall": 0.88,
+        "person_precision": 0.8462,
+        "person_f1": 0.8627,
+        "n_images": 39,
+        "conf": 0.2
+      },
+      {
+        "ladder_recall": 0.9487,
+        "ladder_precision": 1.0,
+        "ladder_f1": 0.9737,
+        "person_recall": 0.88,
+        "person_precision": 0.88,
+        "person_f1": 0.88,
+        "n_images": 39,
+        "conf": 0.25
+      },
+      {
+        "ladder_recall": 0.9487,
+        "ladder_precision": 1.0,
+        "ladder_f1": 0.9737,
+        "person_recall": 0.88,
+        "person_precision": 0.88,
+        "person_f1": 0.88,
+        "n_images": 39,
+        "conf": 0.3
+      },
+      {
+        "ladder_recall": 0.9487,
+        "ladder_precision": 1.0,
+        "ladder_f1": 0.9737,
+        "person_recall": 0.88,
+        "person_precision": 0.88,
+        "person_f1": 0.88,
+        "n_images": 39,
+        "conf": 0.35
+      },
+      {
+        "ladder_recall": 0.9487,
+        "ladder_precision": 1.0,
+        "ladder_f1": 0.9737,
+        "person_recall": 0.88,
+        "person_precision": 0.88,
+        "person_f1": 0.88,
+        "n_images": 39,
+        "conf": 0.4
+      },
+      {
+        "ladder_recall": 0.9487,
+        "ladder_precision": 1.0,
+        "ladder_f1": 0.9737,
+        "person_recall": 0.88,
+        "person_precision": 0.88,
+        "person_f1": 0.88,
+        "n_images": 39,
+        "conf": 0.45
+      },
+      {
+        "ladder_recall": 0.9487,
+        "ladder_precision": 1.0,
+        "ladder_f1": 0.9737,
+        "person_recall": 0.88,
+        "person_precision": 0.88,
+        "person_f1": 0.88,
+        "n_images": 39,
+        "conf": 0.5
+      }
+    ],
+    "SG -> IS test": [
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0.0,
+        "ladder_f1": 0,
+        "person_recall": 0.0074,
+        "person_precision": 0.0682,
+        "person_f1": 0.0133,
+        "n_images": 195,
+        "conf": 0.1
+      },
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0.0,
+        "ladder_f1": 0,
+        "person_recall": 0.0074,
+        "person_precision": 0.0968,
+        "person_f1": 0.0137,
+        "n_images": 195,
+        "conf": 0.15
+      },
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0.0,
+        "ladder_f1": 0,
+        "person_recall": 0.0074,
+        "person_precision": 0.1429,
+        "person_f1": 0.014,
+        "n_images": 195,
+        "conf": 0.2
+      },
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0.0,
+        "ladder_f1": 0,
+        "person_recall": 0.0074,
+        "person_precision": 0.1875,
+        "person_f1": 0.0142,
+        "n_images": 195,
+        "conf": 0.25
+      },
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0.0,
+        "ladder_f1": 0,
+        "person_recall": 0.0049,
+        "person_precision": 0.1818,
+        "person_f1": 0.0096,
+        "n_images": 195,
+        "conf": 0.3
+      },
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0.0,
+        "ladder_f1": 0,
+        "person_recall": 0.0025,
+        "person_precision": 0.1111,
+        "person_f1": 0.0048,
+        "n_images": 195,
+        "conf": 0.35
+      },
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0.0,
+        "ladder_f1": 0,
+        "person_recall": 0.0025,
+        "person_precision": 0.1667,
+        "person_f1": 0.0048,
+        "n_images": 195,
+        "conf": 0.4
+      },
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0.0,
+        "ladder_f1": 0,
+        "person_recall": 0.0025,
+        "person_precision": 0.1667,
+        "person_f1": 0.0048,
+        "n_images": 195,
+        "conf": 0.45
+      },
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0.0,
+        "ladder_f1": 0,
+        "person_recall": 0.0,
+        "person_precision": 0.0,
+        "person_f1": 0,
+        "n_images": 195,
+        "conf": 0.5
+      }
+    ],
+    "IS -> SG test": [
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0.0,
+        "ladder_f1": 0,
+        "person_recall": 0.36,
+        "person_precision": 0.1429,
+        "person_f1": 0.2045,
+        "n_images": 39,
+        "conf": 0.1
+      },
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0.0,
+        "ladder_f1": 0,
+        "person_recall": 0.36,
+        "person_precision": 0.1957,
+        "person_f1": 0.2535,
+        "n_images": 39,
+        "conf": 0.15
+      },
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0,
+        "ladder_f1": 0,
+        "person_recall": 0.36,
+        "person_precision": 0.2368,
+        "person_f1": 0.2857,
+        "n_images": 39,
+        "conf": 0.2
+      },
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0,
+        "ladder_f1": 0,
+        "person_recall": 0.36,
+        "person_precision": 0.2647,
+        "person_f1": 0.3051,
+        "n_images": 39,
+        "conf": 0.25
+      },
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0,
+        "ladder_f1": 0,
+        "person_recall": 0.28,
+        "person_precision": 0.2917,
+        "person_f1": 0.2857,
+        "n_images": 39,
+        "conf": 0.3
+      },
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0,
+        "ladder_f1": 0,
+        "person_recall": 0.28,
+        "person_precision": 0.3684,
+        "person_f1": 0.3182,
+        "n_images": 39,
+        "conf": 0.35
+      },
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0,
+        "ladder_f1": 0,
+        "person_recall": 0.2,
+        "person_precision": 0.4545,
+        "person_f1": 0.2778,
+        "n_images": 39,
+        "conf": 0.4
+      },
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0,
+        "ladder_f1": 0,
+        "person_recall": 0.2,
+        "person_precision": 0.5,
+        "person_f1": 0.2857,
+        "n_images": 39,
+        "conf": 0.45
+      },
+      {
+        "ladder_recall": 0.0,
+        "ladder_precision": 0,
+        "ladder_f1": 0,
+        "person_recall": 0.16,
+        "person_precision": 0.5714,
+        "person_f1": 0.25,
+        "n_images": 39,
+        "conf": 0.5
+      }
+    ],
+    "IS -> IS test": [
+      {
+        "ladder_recall": 0.7778,
+        "ladder_precision": 0.5231,
+        "ladder_f1": 0.6255,
+        "person_recall": 0.8771,
+        "person_precision": 0.7331,
+        "person_f1": 0.7987,
+        "n_images": 195,
+        "conf": 0.1
+      },
+      {
+        "ladder_recall": 0.7778,
+        "ladder_precision": 0.5833,
+        "ladder_f1": 0.6667,
+        "person_recall": 0.8624,
+        "person_precision": 0.7697,
+        "person_f1": 0.8134,
+        "n_images": 195,
+        "conf": 0.15
+      },
+      {
+        "ladder_recall": 0.7725,
+        "ladder_precision": 0.6348,
+        "ladder_f1": 0.6969,
+        "person_recall": 0.8526,
+        "person_precision": 0.7922,
+        "person_f1": 0.8213,
+        "n_images": 195,
+        "conf": 0.2
+      },
+      {
+        "ladder_recall": 0.7619,
+        "ladder_precision": 0.6761,
+        "ladder_f1": 0.7164,
+        "person_recall": 0.8428,
+        "person_precision": 0.8167,
+        "person_f1": 0.8295,
+        "n_images": 195,
+        "conf": 0.25
+      },
+      {
+        "ladder_recall": 0.7513,
+        "ladder_precision": 0.7245,
+        "ladder_f1": 0.7377,
+        "person_recall": 0.8231,
+        "person_precision": 0.8292,
+        "person_f1": 0.8261,
+        "n_images": 195,
+        "conf": 0.3
+      },
+      {
+        "ladder_recall": 0.7249,
+        "ladder_precision": 0.7611,
+        "ladder_f1": 0.7425,
+        "person_recall": 0.8133,
+        "person_precision": 0.8401,
+        "person_f1": 0.8265,
+        "n_images": 195,
+        "conf": 0.35
+      },
+      {
+        "ladder_recall": 0.6772,
+        "ladder_precision": 0.7853,
+        "ladder_f1": 0.7273,
+        "person_recall": 0.7862,
+        "person_precision": 0.8488,
+        "person_f1": 0.8163,
+        "n_images": 195,
+        "conf": 0.4
+      },
+      {
+        "ladder_recall": 0.6667,
+        "ladder_precision": 0.7925,
+        "ladder_f1": 0.7241,
+        "person_recall": 0.7789,
+        "person_precision": 0.8591,
+        "person_f1": 0.817,
+        "n_images": 195,
+        "conf": 0.45
+      },
+      {
+        "ladder_recall": 0.6455,
+        "ladder_precision": 0.8026,
+        "ladder_f1": 0.7155,
+        "person_recall": 0.7518,
+        "person_precision": 0.8693,
+        "person_f1": 0.8063,
+        "n_images": 195,
+        "conf": 0.5
+      }
+    ],
+    "Combined -> SG test": [
+      {
+        "ladder_recall": 0.9487,
+        "ladder_precision": 0.881,
+        "ladder_f1": 0.9136,
+        "person_recall": 0.88,
+        "person_precision": 0.6667,
+        "person_f1": 0.7586,
+        "n_images": 39,
+        "conf": 0.1
+      },
+      {
+        "ladder_recall": 0.9487,
+        "ladder_precision": 0.881,
+        "ladder_f1": 0.9136,
+        "person_recall": 0.88,
+        "person_precision": 0.7857,
+        "person_f1": 0.8302,
+        "n_images": 39,
+        "conf": 0.15
+      },
+      {
+        "ladder_recall": 0.9487,
+        "ladder_precision": 0.9024,
+        "ladder_f1": 0.925,
+        "person_recall": 0.88,
+        "person_precision": 0.8148,
+        "person_f1": 0.8462,
+        "n_images": 39,
+        "conf": 0.2
+      },
+      {
+        "ladder_recall": 0.9487,
+        "ladder_precision": 0.9024,
+        "ladder_f1": 0.925,
+        "person_recall": 0.88,
+        "person_precision": 0.88,
+        "person_f1": 0.88,
+        "n_images": 39,
+        "conf": 0.25
+      },
+      {
+        "ladder_recall": 0.9487,
+        "ladder_precision": 0.925,
+        "ladder_f1": 0.9367,
+        "person_recall": 0.88,
+        "person_precision": 0.88,
+        "person_f1": 0.88,
+        "n_images": 39,
+        "conf": 0.3
+      },
+      {
+        "ladder_recall": 0.9487,
+        "ladder_precision": 0.9487,
+        "ladder_f1": 0.9487,
+        "person_recall": 0.88,
+        "person_precision": 0.9167,
+        "person_f1": 0.898,
+        "n_images": 39,
+        "conf": 0.35
+      },
+      {
+        "ladder_recall": 0.9487,
+        "ladder_precision": 0.9737,
+        "ladder_f1": 0.961,
+        "person_recall": 0.88,
+        "person_precision": 0.9167,
+        "person_f1": 0.898,
+        "n_images": 39,
+        "conf": 0.4
+      },
+      {
+        "ladder_recall": 0.9487,
+        "ladder_precision": 0.9737,
+        "ladder_f1": 0.961,
+        "person_recall": 0.88,
+        "person_precision": 0.9167,
+        "person_f1": 0.898,
+        "n_images": 39,
+        "conf": 0.45
+      },
+      {
+        "ladder_recall": 0.9487,
+        "ladder_precision": 0.9737,
+        "ladder_f1": 0.961,
+        "person_recall": 0.88,
+        "person_precision": 0.9167,
+        "person_f1": 0.898,
+        "n_images": 39,
+        "conf": 0.5
+      }
+    ],
+    "Combined -> IS test": [
+      {
+        "ladder_recall": 0.7672,
+        "ladder_precision": 0.5472,
+        "ladder_f1": 0.6388,
+        "person_recall": 0.855,
+        "person_precision": 0.7265,
+        "person_f1": 0.7856,
+        "n_images": 195,
+        "conf": 0.1
+      },
+      {
+        "ladder_recall": 0.7566,
+        "ladder_precision": 0.5837,
+        "ladder_f1": 0.659,
+        "person_recall": 0.8501,
+        "person_precision": 0.7538,
+        "person_f1": 0.7991,
+        "n_images": 195,
+        "conf": 0.15
+      },
+      {
+        "ladder_recall": 0.7566,
+        "ladder_precision": 0.6217,
+        "ladder_f1": 0.6826,
+        "person_recall": 0.8452,
+        "person_precision": 0.7765,
+        "person_f1": 0.8094,
+        "n_images": 195,
+        "conf": 0.2
+      },
+      {
+        "ladder_recall": 0.746,
+        "ladder_precision": 0.6438,
+        "ladder_f1": 0.6912,
+        "person_recall": 0.8305,
+        "person_precision": 0.7934,
+        "person_f1": 0.8115,
+        "n_images": 195,
+        "conf": 0.25
+      },
+      {
+        "ladder_recall": 0.7407,
+        "ladder_precision": 0.6667,
+        "ladder_f1": 0.7018,
+        "person_recall": 0.8206,
+        "person_precision": 0.8087,
+        "person_f1": 0.8146,
+        "n_images": 195,
+        "conf": 0.3
+      },
+      {
+        "ladder_recall": 0.7249,
+        "ladder_precision": 0.6716,
+        "ladder_f1": 0.6972,
+        "person_recall": 0.8182,
+        "person_precision": 0.8222,
+        "person_f1": 0.8202,
+        "n_images": 195,
+        "conf": 0.35
+      },
+      {
+        "ladder_recall": 0.7037,
+        "ladder_precision": 0.6963,
+        "ladder_f1": 0.7,
+        "person_recall": 0.8133,
+        "person_precision": 0.8465,
+        "person_f1": 0.8296,
+        "n_images": 195,
+        "conf": 0.4
+      },
+      {
+        "ladder_recall": 0.6772,
+        "ladder_precision": 0.6957,
+        "ladder_f1": 0.6863,
+        "person_recall": 0.801,
+        "person_precision": 0.8647,
+        "person_f1": 0.8316,
+        "n_images": 195,
+        "conf": 0.45
+      },
+      {
+        "ladder_recall": 0.6667,
+        "ladder_precision": 0.7241,
+        "ladder_f1": 0.6942,
+        "person_recall": 0.7813,
+        "person_precision": 0.8712,
+        "person_f1": 0.8238,
+        "n_images": 195,
+        "conf": 0.5
+      }
+    ]
+  },
+  "cross_dataset": [
+    {
+      "ladder_recall": 0.9487,
+      "ladder_precision": 1.0,
+      "ladder_f1": 0.9737,
+      "person_recall": 0.88,
+      "person_precision": 0.88,
+      "person_f1": 0.88,
+      "n_images": 39,
+      "model": "SG",
+      "test_set": "SG test"
+    },
+    {
+      "ladder_recall": 0.0,
+      "ladder_precision": 0.0,
+      "ladder_f1": 0,
+      "person_recall": 0.0074,
+      "person_precision": 0.1875,
+      "person_f1": 0.0142,
+      "n_images": 195,
+      "model": "SG",
+      "test_set": "IS test"
+    },
+    {
+      "ladder_recall": 0.0,
+      "ladder_precision": 0,
+      "ladder_f1": 0,
+      "person_recall": 0.36,
+      "person_precision": 0.2647,
+      "person_f1": 0.3051,
+      "n_images": 39,
+      "model": "IS",
+      "test_set": "SG test"
+    },
+    {
+      "ladder_recall": 0.7619,
+      "ladder_precision": 0.6761,
+      "ladder_f1": 0.7164,
+      "person_recall": 0.8428,
+      "person_precision": 0.8167,
+      "person_f1": 0.8295,
+      "n_images": 195,
+      "model": "IS",
+      "test_set": "IS test"
+    },
+    {
+      "ladder_recall": 0.9487,
+      "ladder_precision": 0.9024,
+      "ladder_f1": 0.925,
+      "person_recall": 0.88,
+      "person_precision": 0.88,
+      "person_f1": 0.88,
+      "n_images": 39,
+      "model": "Combined",
+      "test_set": "SG test"
+    },
+    {
+      "ladder_recall": 0.746,
+      "ladder_precision": 0.6438,
+      "ladder_f1": 0.6912,
+      "person_recall": 0.8305,
+      "person_precision": 0.7934,
+      "person_f1": 0.8115,
+      "n_images": 195,
+      "model": "Combined",
+      "test_set": "IS test"
+    }
+  ],
+  "tta": [
+    {
+      "model": "SG",
+      "test_set": "SG test",
+      "normal": {
+        "ladder_recall": 0.9487,
+        "ladder_precision": 1.0,
+        "ladder_f1": 0.9737,
+        "person_recall": 0.88,
+        "person_precision": 0.88,
+        "person_f1": 0.88,
+        "n_images": 39
+      },
+      "tta": {
+        "ladder_recall": 0.9744,
+        "ladder_precision": 1.0,
+        "ladder_f1": 0.987,
+        "person_recall": 0.88,
+        "person_precision": 0.7857,
+        "person_f1": 0.8302,
+        "n_images": 39
+      },
+      "ladder_recall_diff": 0.0257,
+      "person_recall_diff": 0.0,
+      "verdict": "HELPS"
+    },
+    {
+      "model": "IS",
+      "test_set": "IS test",
+      "normal": {
+        "ladder_recall": 0.7619,
+        "ladder_precision": 0.6761,
+        "ladder_f1": 0.7164,
+        "person_recall": 0.8428,
+        "person_precision": 0.8167,
+        "person_f1": 0.8295,
+        "n_images": 195
+      },
+      "tta": {
+        "ladder_recall": 0.7725,
+        "ladder_precision": 0.6008,
+        "ladder_f1": 0.6759,
+        "person_recall": 0.887,
+        "person_precision": 0.7134,
+        "person_f1": 0.7908,
+        "n_images": 195
+      },
+      "ladder_recall_diff": 0.0106,
+      "person_recall_diff": 0.0442,
+      "verdict": "HELPS"
+    },
+    {
+      "model": "Combined",
+      "test_set": "IS test",
+      "normal": {
+        "ladder_recall": 0.746,
+        "ladder_precision": 0.6438,
+        "ladder_f1": 0.6912,
+        "person_recall": 0.8305,
+        "person_precision": 0.7934,
+        "person_f1": 0.8115,
+        "n_images": 195
+      },
+      "tta": {
+        "ladder_recall": 0.7725,
+        "ladder_precision": 0.5887,
+        "ladder_f1": 0.6682,
+        "person_recall": 0.8698,
+        "person_precision": 0.7375,
+        "person_f1": 0.7982,
+        "n_images": 195
+      },
+      "ladder_recall_diff": 0.0265,
+      "person_recall_diff": 0.0393,
+      "verdict": "HELPS"
+    }
+  ]
+}

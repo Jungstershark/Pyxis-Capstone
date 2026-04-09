@@ -1,0 +1,16 @@
+rank,prompt,recall,precision,f1,tp,fp,fn,time_sec
+1,person. human. pilot.,0.8787,0.9092,0.8937,681,68,94,52.2
+2,person. pilot. man.,0.8568,0.9133,0.8842,664,63,111,52.7
+3,person. human. man.,0.8594,0.9074,0.8827,666,68,109,52.8
+4,person. people. human.,0.8748,0.8874,0.8811,678,86,97,52.9
+5,person. human. people.,0.8748,0.8874,0.8811,678,86,97,53.2
+6,person. crew member. human.,0.8735,0.8838,0.8787,677,89,98,54.0
+7,person. human. crew member.,0.8735,0.8838,0.8787,677,89,98,53.4
+8,person. pilot. people.,0.8671,0.8877,0.8773,672,85,103,53.3
+9,person. crew member. sailor.,0.8542,0.8982,0.8757,662,75,113,53.9
+10,person. pilot. crew member. human.,0.8284,0.9081,0.8664,642,65,133,52.9
+11,person. pilot. human. people.,0.8439,0.879,0.8611,654,90,121,54.2
+12,person. pilot. crew member. sailor.,0.7871,0.9104,0.8443,610,60,165,54.8
+13,person. pilot. crew member. people.,0.8271,0.857,0.8418,641,107,134,53.8
+14,person. pilot. crew member. human. people.,0.7794,0.8678,0.8212,604,92,171,53.6
+15,person. pilot. crew member. maritime worker.,0.7071,0.9073,0.7948,548,56,227,54.0

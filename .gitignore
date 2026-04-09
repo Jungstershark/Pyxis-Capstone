@@ -44,6 +44,21 @@ legacy/
 **/5_weights/**/
 !**/5_weights/README.md
 
+# Zip archives
+*.zip
+
+# Log files
+run_all.log
+
+# Cache files
+*.cache
+
+# Scraped images (reproducible from scraper)
+**/scraped/
+
+# Raw frames (reproducible from videos)
+**/raw_frames/
+
 # OS
 .DS_Store
 Thumbs.db

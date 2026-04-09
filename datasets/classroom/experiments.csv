@@ -1,0 +1,2 @@
+run_name,model,imgsz,epochs,batch,workers,ladder_recall,ladder_precision,person_recall,person_precision,ladder_avg_pred_conf,person_avg_pred_conf,ladder_area_mean,ladder_area_p50,ladder_area_p90,gold_val_images,best_ckpt_path
+classroom_y11s_960,yolo11s.pt,960,100,24,4,0.891304,0.773585,0.789474,0.75,0.652348,0.70134,0.1096968335,0.0279199071,0.3178472519,53,C:\Users\Jungstershark\Documents\Projects\Capstone\Pyxis-Capstone\datasets\classroom\5_weights\classroom_y11s_960\best.pt

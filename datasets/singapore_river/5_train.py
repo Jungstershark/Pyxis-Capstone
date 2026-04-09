@@ -1,15 +1,16 @@
 """
 Step 5: Train YOLO models on Singapore River dataset.
 
-Reads tier datasets from:
-    augmented/t0/, augmented/t1/, augmented/t2/
+Trains directly on gold/ (no offline augmentation — YOLO's built-in
+augmentation handles mosaic, mixup, hsv, flip, scale, translate).
 
-Gold dataset for evaluation:
-    gold/
+Gold dataset:
+    gold/images/{train, val, test}
+    gold/labels/{train, val, test}
 
 Outputs:
-    weights/<run_name>/best.pt
-    runs/<run_name>/
+    5_weights/<run_name>/best.pt
+    5_runs/<run_name>/
     experiments.csv
 
 Usage:
@@ -29,7 +30,6 @@ from typing import Dict, List, Optional
 import numpy as np
 import torch
 
-# Add model_finetuning to path for shared evaluate module
 import sys
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "model_finetuning"))
@@ -63,17 +63,7 @@ WEIGHTS_DIR = SCRIPT_DIR / "5_weights"
 RUNS_DIR.mkdir(parents=True, exist_ok=True)
 WEIGHTS_DIR.mkdir(parents=True, exist_ok=True)
 
-# Gold dataset for evaluation (val/test corrected)
 GOLD_DATASET = SCRIPT_DIR / "gold"
-
-# Tiered datasets for training (created by 4_augment.py)
-TIER_DATASETS = {
-    0: SCRIPT_DIR / "4_augmented" / "t0",
-    1: SCRIPT_DIR / "4_augmented" / "t1",
-    2: SCRIPT_DIR / "4_augmented" / "t2",
-}
-
-# Class names (same as pilot ladder dataset)
 CLASS_NAMES = {0: "pilot_ladder", 1: "person"}
 
 
@@ -98,10 +88,9 @@ def write_data_yaml(dataset_dir: Path, out_path: Path):
 @dataclass
 class Experiment:
     run_name: str
-    model: str           # e.g., "yolo11s.pt"
-    tier: int            # 0/1/2
-    imgsz: int           # 960 or 1280
-    epochs: int = 50
+    model: str
+    imgsz: int
+    epochs: int = 100
     batch: int = 24
     lr0: Optional[float] = None
     close_mosaic: int = 10
@@ -115,7 +104,7 @@ class Experiment:
 # ----------------------------
 CSV_PATH = SCRIPT_DIR / "experiments.csv"
 CSV_FIELDS = [
-    "run_name", "model", "tier", "imgsz", "epochs", "batch", "workers",
+    "run_name", "model", "imgsz", "epochs", "batch", "workers",
     "ladder_recall", "ladder_precision",
     "person_recall", "person_precision",
     "ladder_avg_pred_conf", "person_avg_pred_conf",
@@ -139,14 +128,13 @@ def append_csv(row: Dict):
 def train_one(exp: Experiment) -> Path:
     set_all_seeds(SEED)
 
-    dataset_dir = TIER_DATASETS[exp.tier]
-    assert dataset_dir.exists(), f"Missing dataset tier dir: {dataset_dir}"
+    assert GOLD_DATASET.exists(), f"Gold dataset not found: {GOLD_DATASET}"
 
     run_dir = RUNS_DIR / exp.run_name
     run_dir.mkdir(parents=True, exist_ok=True)
 
     data_yaml = run_dir / "data.yaml"
-    write_data_yaml(dataset_dir, data_yaml)
+    write_data_yaml(GOLD_DATASET, data_yaml)
 
     (run_dir / "exp_config.json").write_text(json.dumps(asdict(exp), indent=2), encoding="utf-8")
 
@@ -210,7 +198,6 @@ def run_wave(experiments: List[Experiment]) -> List[Dict]:
         row = {
             "run_name": exp.run_name,
             "model": exp.model,
-            "tier": exp.tier,
             "imgsz": exp.imgsz,
             "epochs": exp.epochs,
             "batch": exp.batch,
@@ -240,15 +227,21 @@ def run_wave(experiments: List[Experiment]) -> List[Dict]:
 
 
 # ----------------------------
-# CONFIGURE YOUR EXPERIMENTS HERE
+# PHASE 1: Backbone + Resolution Selection
 # ----------------------------
 if __name__ == "__main__":
-    # Wave 1: Backbone selection on Tier 0
-    wave1 = [
-        Experiment(run_name="sg_y11n_t0_960", model="yolo11n.pt", tier=0, imgsz=960, batch=32),
-        Experiment(run_name="sg_y11s_t0_960", model="yolo11s.pt", tier=0, imgsz=960, batch=24),
-        Experiment(run_name="sg_y11m_t0_960", model="yolo11m.pt", tier=0, imgsz=960, batch=16),
+    experiments = [
+        Experiment(run_name="sg_y11s_t0_960",  model="yolo11s.pt", imgsz=960,  batch=24),
+        Experiment(run_name="sg_y11m_t0_960",  model="yolo11m.pt", imgsz=960,  batch=16),
+        Experiment(run_name="sg_y11s_t0_1280", model="yolo11s.pt", imgsz=1280, batch=16),
     ]
-    run_wave(wave1)
+    rows = run_wave(experiments)
 
-    print("\nWave 1 done. Review experiments.csv, then add Wave 2 experiments.")
+    # Auto-pick winner by ladder recall
+    winner = sorted(rows, key=lambda r: (r["ladder_recall"], r["ladder_precision"]), reverse=True)[0]
+    print(f"\n{'='*60}")
+    print(f"WINNER: {winner['run_name']}")
+    print(f"  Ladder R={winner['ladder_recall']} P={winner['ladder_precision']}")
+    print(f"  Person R={winner['person_recall']} P={winner['person_precision']}")
+    print(f"  Checkpoint: {winner['best_ckpt_path']}")
+    print(f"{'='*60}")
